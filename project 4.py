@@ -19,6 +19,5 @@ def game_board():
     pygame.draw.lines(screen, (0, 0, 0), True, [(200, 100), (200, 300)], 10)
     pygame.draw.lines(screen, (0, 0, 0), True, [(300, 100), (300, 300)], 10)
 pygame.init()
-
 start_game()
-
+game_board()
