@@ -5,6 +5,13 @@ def start_game():
         for i in pygame.event.get():
             if i.type == pygame.quit:
                 start= false
+            if i.type == pygame.MOUSEBUTTONUP:
+                position = pygame.mouse.get_pos()
+                player = 1
+                if player == 1:
+                    if first.collidepoint(position):
+                        pygame.draw.rect(screen, (250, 0, 250), (50, 50, 50, 50))
+                        player = player + 1
         pygame.display.update()
     paygame.quit()
 pygame.init()
